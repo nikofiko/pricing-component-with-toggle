@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-mon bg-back">
+  <div class="absolute -right-52 lg:right-0">
+    <img src="/images/bg-top.svg" alt="">
+  </div>
+  <div class="hidden lg:block absolute bottom-0">
+    <img src="/images/bg-bottom.svg" alt="">
+  </div>
+  <div>
+    <div class="flex justify-center flex-col">
+      <h1 class="text-3xl text-head font-bold text-center pt-14 pb-7">Our Pricing</h1>
+      <div class="flex justify-center gap-4 pb-12">
+        <h2 class="font-bold text-anu-color text-sm">Annually</h2>
+        <label class="relative inline-block w-11 h-6 cursor-pointer">
+          <input type="checkbox" id="toggle-switch" class="sr-only peer">
+          <span id="toggle-background" class="peer-focus:outline-none peer-checked:bg-gradient-to-r from-[#b7bbf1] to-[#9599df] absolute top-0 left-0 w-full h-full bg-gray-300 rounded-full transition-colors duration-300 ease-in-out"></span>
+          <span id="toggle-knob" class="peer-focus:outline-none peer-checked:-translate-x-full absolute top-1 right-1 w-4 h-4 bg-white rounded-full transition-all duration-300 ease-in-out"></span>
+        </label>
+        <h2 class="font-bold text-anu-color text-sm">Monthly</h2>
+      </div>
+    </div>
+    <div class="flex justify-center flex-col lg:flex-row max-w-[355px] pl-4 lg:pl-0 lg:max-w-none">
+      <div class="shadow-custom bg-white p-7 lg:rounded-tl-lg lg:rounded-bl-lg rounded-lg max-h-[435px] mt-7 mb-7 lb:mb-0 z-40">
+        <h3 class="text-xl text-head font-bold text-center pb-7">Basic</h3>
+        <h4 class="text-6xl font-bold text-[#373a48] pb-4 text-center price1">&dollar;19.99</h4>
+
+        <hr class="pb-5">
+        <p class="text-sm text-head font-bold text-center pb-5">500 GB Storage</p>
+        <hr class="pb-5">
+        <p class="text-sm text-head font-bold text-center pb-5">2 Users Allowed</p>
+        <hr class="pb-5">
+        <p class="text-sm text-head font-bold text-center pb-5">Send up to 3 GB</p>
+        <hr class="pb-5">
+        <button class="text-slider font-bold py-2 border-[1px] px-20 uppercase text-nowrap border-black rounded-sm cursor-pointer">Learn More</button>
+      </div>
+      <div class="shadow-custom bg-gradient-to-r from-[#a3a8f0] to-[#696fdd] px-7 pt-14 pb-14 rounded-lg">
+        <h3 class="text-xl text-white font-bold text-center pb-7">Professional</h3>
+        <h4 class="text-6xl font-bold text-white pb-4 text-center price2">&dollar;24.99</h4>
+
+        <hr class="pb-5">
+        <p class="text-sm text-white font-bold text-center pb-5">1 TB Storage</p>
+        <hr class="pb-5">
+        <p class="text-sm text-white font-bold text-center pb-5">5 Users Allowed</p>
+        <hr class="pb-5">
+        <p class="text-sm text-white font-bold text-center pb-5">Send up to 10 GB</p>
+        <hr class="pb-6">
+        <button class="text-white font-bold py-2 border-[1px] px-20 uppercase text-nowrap border-white rounded-sm cursor-pointer">Learn More</button>
+      </div>
+      <div class="shadow-custom bg-white p-7 lg:rounded-tr-lg lg:rounded-br-lg rounded-lg max-h-[435px] mt-7 z-40 mb-7 lb:mb-0">
+        <h3 class="text-xl text-head font-bold text-center pb-7">Master</h3>
+        <h4 class="text-6xl font-bold text-[#373a48] pb-4 text-center price3">&dollar;39.99</h4>
+        <hr class="pb-5">
+        <p class="text-sm text-head font-bold text-center pb-5">2 TB Storage</p>
+        <hr class="pb-5">
+        <p class="text-sm text-head font-bold text-center pb-5">10 Users Allowed</p>
+        <hr class="pb-5">
+        <p class="text-sm text-head font-bold text-center pb-5">Send up to 20 GB</p>
+        <hr class="pb-5">
+        <button class="text-slider font-bold py-2 border-[1px] px-20 uppercase text-nowrap border-black rounded-sm cursor-pointer">Learn More</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
